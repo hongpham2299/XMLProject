@@ -92,10 +92,10 @@ public class DOMParser {
 
                 NodeList participantElements = element.getChildNodes();
                 for (int j = 0; j < participantElements.getLength(); j++) {
-                    Node eventItem = participantElements.item(j);
-                    if (eventItem.getNodeType() == Node.ELEMENT_NODE) {
-                        String elementName = eventItem.getNodeName();
-                        String elementValue = eventItem.getTextContent();
+                    Node participantItem = participantElements.item(j);
+                    if (participantItem.getNodeType() == Node.ELEMENT_NODE) {
+                        String elementName = participantItem.getNodeName();
+                        String elementValue = participantItem.getTextContent();
                         logger.info("Element: " + elementName + ", Value: " + elementValue);
                     }
                 }
