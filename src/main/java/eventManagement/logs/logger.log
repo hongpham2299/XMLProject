@@ -1,0 +1,72 @@
+2023-06-10 21:43:48,352 INFO e.x.DOMParser [main] Participant Id: SF-102
+2023-06-10 21:43:48,354 INFO e.x.DOMParser [main] Element: participantName, Value: Jennifer Jenkins
+2023-06-10 21:43:48,355 INFO e.x.DOMParser [main] Element: email, Value: jennifer@gmail.com
+2023-06-10 21:43:48,355 INFO e.x.DOMParser [main] Element: phone, Value: 8136439013
+2023-06-10 21:43:48,355 INFO e.x.DOMParser [main] Element: paymentDetails, Value: 
+            Jennifer Jenkins
+            American Express
+            3439172354192241
+            03/2029
+            560
+        
+2023-06-10 21:43:48,355 INFO e.x.Main [main] -------
+2023-06-10 21:43:48,359 INFO e.x.DOMParser [main] Input index: 0 ---> Organizer {organizerId='O12345', organizerName='USSOCOM', email='sofweek@gsof.org', phone='4325672351'}
+2023-06-10 21:43:48,359 INFO e.x.Main [main] -------
+2023-06-10 21:43:48,363 INFO e.x.DOMParser [main] ID: E12345
+2023-06-10 21:43:48,363 INFO e.x.DOMParser [main] Element: eventName, Value: SOFIC Week 2023
+2023-06-10 21:43:48,363 INFO e.x.DOMParser [main] Element: description, Value: U.S. Special Operations Command (USSOCOM) has partnered with industry to host an annual Conference
+        in Tampa, FL for more than a decade-the conference has traditionally been known as Special Operations Forces
+        Industry Conference, or SOFIC.
+    
+2023-06-10 21:43:48,363 INFO e.x.DOMParser [main] Element: ticketPrice, Value: 230.00
+2023-06-10 21:43:48,363 INFO e.x.DOMParser [main] Element: startDateTime, Value: 2023-09-18T09:00:00
+2023-06-10 21:43:48,364 INFO e.x.DOMParser [main] Element: endDateTime, Value: 2023-09-20T13:30:00
+2023-06-10 21:43:48,364 INFO e.x.DOMParser [main] Element: organizer, Value: 
+        USSOCOM
+        sofweek@gsof.org
+        4325672351
+    
+2023-06-10 21:43:48,364 INFO e.x.DOMParser [main] Element: venue, Value: 
+        Tampa Convention Center
+        333 S Franklin St
+        Tampa
+        Florida
+        US
+        33602
+    
+2023-06-10 21:43:48,364 INFO e.x.DOMParser [main] Element: participant, Value: 
+        Jessica Roman
+        jessica123@gmail.com
+        8132380232
+        
+            Jessica Roman
+            Visa
+            4556182327531691
+            05/2028
+            287
+        
+    
+2023-06-10 21:43:48,365 INFO e.x.DOMParser [main] Element: participant, Value: 
+        Kha Kim
+        khakim@gmail.com
+        4074561289
+        
+            Kha Kim
+            Master
+            5348016040540631
+            03/2027
+            396
+        
+    
+2023-06-10 21:43:48,365 INFO e.x.DOMParser [main] Element: participant, Value: 
+        Jennifer Jenkins
+        jennifer@gmail.com
+        8136439013
+        
+            Jennifer Jenkins
+            American Express
+            3439172354192241
+            03/2029
+            560
+        
+    

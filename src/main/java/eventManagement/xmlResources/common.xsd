@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.hongeventmanagement.com/common"
+        xmlns:tns="http://www.hongeventmanagement.com/common"
+        elementFormDefault="qualified">
+
+    <simpleType name="stringMax25Chars">
+        <restriction base="string">
+            <maxLength value="25"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="stringMax500Chars">
+        <restriction base="string">
+            <maxLength value="500"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="emailFormat">
+        <restriction base="string">
+            <pattern value="[^@]+@[^\.]+\..+"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="phoneFormat">
+        <restriction base="string">
+            <pattern value="[0-9]{10}"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="idFormat">
+        <restriction base="string">
+            <pattern value="[a-zA-Z0-9._%+-]{6}"/>
+        </restriction>
+    </simpleType>
+
+</schema>

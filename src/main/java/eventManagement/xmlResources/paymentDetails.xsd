@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.hongeventmanagement.com/event"
+        xmlns:tns="http://www.hongeventmanagement.com/event"
+        xmlns:common="http://www.hongeventmanagement.com/common"
+        elementFormDefault="qualified">
+
+    <import schemaLocation="common.xsd" namespace="http://www.hongeventmanagement.com/common"/>
+
+    <complexType name="paymentDetails">
+        <sequence>
+            <element name="cardHolderName" type="common:stringMax25Chars"/>
+            <element name="cardType" type="tns:cardTypeOptions"/>
+            <element name="cardNumber" type="tns:cardNumberFormat"/>
+            <element name="expirationDate" type="tns:expirationDateFormat"/>
+            <element name="cvvNumber" type="tns:cvvNumberFormat"/>
+        </sequence>
+        <attribute name="id" type="common:idFormat" use="required"/>
+    </complexType>
+
+    <simpleType name="cardTypeOptions">
+        <restriction base="string">
+            <enumeration value="Master"/>
+            <enumeration value="Visa"/>
+            <enumeration value="American Express"/>
+            <enumeration value="Discover"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="expirationDateFormat">
+        <restriction base="string">
+            <pattern value="\d{2}/\d{4}"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="cardNumberFormat">
+        <restriction base="string">
+            <pattern value="[0-9]{16}"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="cvvNumberFormat">
+        <restriction base="string">
+            <pattern value="[0-9]{3}"/>
+        </restriction>
+    </simpleType>
+
+</schema>

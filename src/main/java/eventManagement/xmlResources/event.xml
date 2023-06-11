@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<event id="E12345"
+       xmlns="http://www.hongeventmanagement.com/event"
+       xmlns:common="http://www.hongeventmanagement.com/common"
+       xsi:schemaLocation="http://www.hongeventmanagement.com/event event.xsd"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <eventName>SOFIC Week 2023</eventName>
+    <description>U.S. Special Operations Command (USSOCOM) has partnered with industry to host an annual Conference
+        in Tampa, FL for more than a decade-the conference has traditionally been known as Special Operations Forces
+        Industry Conference, or SOFIC.
+    </description>
+    <ticketPrice>230.00</ticketPrice>
+    <startDateTime>2023-09-18T09:00:00</startDateTime>
+    <endDateTime>2023-09-20T13:30:00</endDateTime>
+    <organizer id="O12345">
+        <organizerName>USSOCOM</organizerName>
+        <email>sofweek@gsof.org</email>
+        <phone>4325672351</phone>
+    </organizer>
+    <venue id="TP-MWS">
+        <venueName>Tampa Convention Center</venueName>
+        <street>333 S Franklin St</street>
+        <city>Tampa</city>
+        <state>Florida</state>
+        <country>US</country>
+        <zipcode>33602</zipcode>
+    </venue>
+    <!--3 or more repetitions as requirement-->
+    <participant id="SF-100">
+        <participantName>Jessica Roman</participantName>
+        <email>jessica123@gmail.com</email>
+        <phone>8132380232</phone>
+        <paymentDetails id="SFP-10">
+            <cardHolderName>Jessica Roman</cardHolderName>
+            <cardType>Visa</cardType>
+            <cardNumber>4556182327531691</cardNumber>
+            <expirationDate>05/2028</expirationDate>
+            <cvvNumber>287</cvvNumber>
+        </paymentDetails>
+    </participant>
+    <participant id="SF-101">
+        <participantName>Kha Kim</participantName>
+        <email>khakim@gmail.com</email>
+        <phone>4074561289</phone>
+        <paymentDetails id="SFP-11">
+            <cardHolderName>Kha Kim</cardHolderName>
+            <cardType>Master</cardType>
+            <cardNumber>5348016040540631</cardNumber>
+            <expirationDate>03/2027</expirationDate>
+            <cvvNumber>396</cvvNumber>
+        </paymentDetails>
+    </participant>
+    <participant id="SF-102">
+        <participantName>Jennifer Jenkins</participantName>
+        <email>jennifer@gmail.com</email>
+        <phone>8136439013</phone>
+        <paymentDetails id="SFP-12">
+            <cardHolderName>Jennifer Jenkins</cardHolderName>
+            <cardType>American Express</cardType>
+            <cardNumber>3439172354192241</cardNumber>
+            <expirationDate>03/2029</expirationDate>
+            <cvvNumber>560</cvvNumber>
+        </paymentDetails>
+    </participant>
+</event>

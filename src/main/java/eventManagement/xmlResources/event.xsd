@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.hongeventmanagement.com/event"
+        xmlns:tns="http://www.hongeventmanagement.com/event"
+        xmlns:common="http://www.hongeventmanagement.com/common"
+        elementFormDefault="qualified">
+
+    <include schemaLocation="organizer.xsd"/>
+    <include schemaLocation="venue.xsd"/>
+    <include schemaLocation="participant.xsd"/>
+    <import schemaLocation="common.xsd" namespace="http://www.hongeventmanagement.com/common"/>
+
+    <element name="event">
+        <complexType>
+            <sequence>
+                <element name="eventName" type="common:stringMax25Chars"/>
+                <element name="description" type="common:stringMax500Chars"/>
+                <element name="ticketPrice" type="decimal"/>
+                <element name="startDateTime" type="dateTime"/>
+                <element name="endDateTime" type="dateTime"/>
+                <element name="organizer" type="tns:organizer"/>
+                <element name="venue" type="tns:venue"/>
+                <element name="participant" type="tns:participant" minOccurs="3" maxOccurs="unbounded"/>
+            </sequence>
+            <attribute name="id" type="common:idFormat" use="required"/>
+        </complexType>
+    </element>
+
+</schema>
