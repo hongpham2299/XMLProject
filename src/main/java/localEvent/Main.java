@@ -21,6 +21,9 @@ public class Main {
 
         Logger logger = LogManager.getLogger(Main.class.getName());
 
+        File file = new File("src/main/java/localEvent/jaxbResources/event.xml");
+
+        //Marshalling - Convert Java Object and write to XML file
         Organizer organizer = new Organizer("OR123", "USAAC", "2101 Wilson Boulevard",
                 "Arlington", "VA", "22201", "USA");
 
@@ -34,12 +37,8 @@ public class Main {
         attendeeList.add(marioDiaz);
 
         Event event = new Event("SF-100", "SOFIC Week 2023", BigDecimal.valueOf(135.50),
-                LocalDateTime.of(2023, 11, 27, 10, 00),
-                LocalDateTime.of(2023, 11, 29, 13, 00), organizer, attendeeList);
+                LocalDateTime.of(2023, 11, 27, 10, 00), LocalDateTime.of(2023, 11, 29, 13, 00), organizer, attendeeList);
 
-        File file = new File("src/main/java/localEvent/jaxbResources/event.xml");
-
-        //Marshalling - Convert Java Object and write to XML file
         try {
 
             JAXBContext jaxbContext = JAXBContext.newInstance(Event.class);
