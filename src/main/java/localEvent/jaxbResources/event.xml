@@ -6,6 +6,10 @@
     <endDateTime>2023-11-29T13:00</endDateTime>
     <organizer organizerId="OR123">
         <organizerName>USAAC</organizerName>
+        <organizerAddress>2101 Wilson Boulevard</organizerAddress>
+        <organizerCity>Arlington</organizerCity>
+        <organizerState>VA</organizerState>
+        <organizerZipCode>22201</organizerZipCode>
     </organizer>
     <attendeeList>
         <attendee id="AT100">

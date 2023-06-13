@@ -21,7 +21,8 @@ public class Main {
 
         Logger logger = LogManager.getLogger(Main.class.getName());
 
-        Organizer organizer = new Organizer("OR123", "USAAC");
+        Organizer organizer = new Organizer("OR123", "USAAC", "2101 Wilson Boulevard",
+                "Arlington", "VA", "22201", "USA");
 
         Attendee hongPham = new Attendee("AT100", "Hong Pham", "hong@gmail.com", "(813) 238-0232");
         Attendee alexWilliams = new Attendee("AT101", "Alex Williams", "alex@gmail.com", "(813) 125-6912");
