@@ -2,6 +2,7 @@
 <Configuration status="WARN">
     <Properties>
         <Property name="filename">src/main/java/eventManagement/logs</Property>
+        <Property name="filename">src/main/java/localEvent/logs</Property>
     </Properties>
     <Appenders>
         <RollingFile name="file"
@@ -19,6 +20,11 @@
     <Loggers>
 
         <Logger name="eventManagement" level="info" additivity="false">
+            <AppenderRef ref="file"/>
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+        <Logger name="localEvent" level="info" additivity="false">
             <AppenderRef ref="file"/>
             <AppenderRef ref="Console"/>
         </Logger>
