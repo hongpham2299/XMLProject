@@ -39,7 +39,7 @@ public class Main {
 
         File file = new File("src/main/java/localEvent/jaxbResources/event.xml");
 
-        //Marshalling - Convert Java Object to XML file
+        //Marshalling - Convert Java Object and write to XML file
         try {
 
             JAXBContext jaxbContext = JAXBContext.newInstance(Event.class);
