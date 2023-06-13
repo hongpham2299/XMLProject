@@ -1,0 +1,6 @@
+2023-06-12 23:28:11,307 INFO l.Main [main] Event XML file is created successfully, and located at jaxbResources folder
+2023-06-12 23:28:11,331 INFO l.Main [main] Attendee List below: 
+[Attendee {id='AT100', name='Hong Pham', email='hong@gmail.com', phone='(813) 238-0232'}
+, Attendee {id='AT101', name='Alex Williams', email='alex@gmail.com', phone='(813) 125-6912'}
+, Attendee {id='AT102', name='Mario Diaz', email='mario@gmail.com', phone='(813) 579-1234'}
+]
