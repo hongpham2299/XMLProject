@@ -49,7 +49,7 @@ public class Main {
             logger.info("Event XML file is created successfully, and located at jaxbResources folder");
 
         } catch (JAXBException e) {
-            throw new RuntimeException(e);
+            logger.error(e.getMessage());
         }
 
         //Unmarshalling - XML file to Java Object
@@ -63,7 +63,7 @@ public class Main {
             logger.info("Attendee List below: \n" +  eventUnMarshall.getAttendeeList());
 
         } catch (JAXBException e) {
-            throw new RuntimeException(e);
+            logger.error(e.getMessage());
         }
     }
 }
