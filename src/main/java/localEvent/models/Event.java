@@ -28,7 +28,8 @@ public class Event {
     @XmlElement(name="organizer")
     private Organizer organizer;
 
-    @XmlElement(name="attendeeList")
+    @XmlElementWrapper(name = "attendeeList")
+    @XmlElement(name="attendee")
     private List<Attendee> attendeeList;
 
     public Event(){}

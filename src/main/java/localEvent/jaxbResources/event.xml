@@ -7,19 +7,21 @@
     <organizer organizerId="OR123">
         <organizerName>USAAC</organizerName>
     </organizer>
-    <attendeeList id="AT100">
-        <name>Hong Pham</name>
-        <email>hong@gmail.com</email>
-        <phone>(813) 238-0232</phone>
-    </attendeeList>
-    <attendeeList id="AT101">
-        <name>Alex Williams</name>
-        <email>alex@gmail.com</email>
-        <phone>(813) 125-6912</phone>
-    </attendeeList>
-    <attendeeList id="AT102">
-        <name>Mario Diaz</name>
-        <email>mario@gmail.com</email>
-        <phone>(813) 579-1234</phone>
+    <attendeeList>
+        <attendee id="AT100">
+            <name>Hong Pham</name>
+            <email>hong@gmail.com</email>
+            <phone>(813) 238-0232</phone>
+        </attendee>
+        <attendee id="AT101">
+            <name>Alex Williams</name>
+            <email>alex@gmail.com</email>
+            <phone>(813) 125-6912</phone>
+        </attendee>
+        <attendee id="AT102">
+            <name>Mario Diaz</name>
+            <email>mario@gmail.com</email>
+            <phone>(813) 579-1234</phone>
+        </attendee>
     </attendeeList>
 </event>
