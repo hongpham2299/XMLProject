@@ -40,7 +40,6 @@ public class Main {
                 LocalDateTime.of(2023, 11, 27, 10, 00), LocalDateTime.of(2023, 11, 29, 13, 00), organizer, attendeeList);
 
         try {
-
             JAXBContext jaxbContext = JAXBContext.newInstance(Event.class);
             Marshaller marshaller = jaxbContext.createMarshaller();
 
@@ -53,7 +52,6 @@ public class Main {
 
         //Unmarshalling - XML file to Java Object
         try {
-
             JAXBContext jaxbContext = JAXBContext.newInstance(Event.class);
             Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
 
